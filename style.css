@@ -1,0 +1,347 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+.caixa-principal {
+  height: auto;
+  width: 100%;
+  background-size:cover;
+  background-position:center;
+  background-color: #201B2C;
+}
+
+.codi-img{
+  width: 55%;
+  position:relative;
+  left: 650px;
+  top: 49px;
+  
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left:30px;
+  padding-right: 30px;
+  padding-top:  25px;
+
+}
+
+.portifolio{
+  color: #ffffff;
+  font-size:  50px;
+  padding-left: 3%;
+}
+
+.portifolio span {
+  color: #00FF88;
+}
+
+.lista{
+  color: #ffffff;
+  list-style: none;
+  display: inline-block;
+  font-size: 19px;
+  font-weight: bold;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.link-menu:hover{
+  color:#0CF34A;
+  transition: 0.5s;
+}
+
+.link-menu{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.meu-nome{
+  position:absolute;
+  top:  75%;
+  left: 7%;
+  
+
+}
+
+h1{
+  color: #ffffff;
+  font-size: 45px;
+}
+
+h1 span{
+  color: #0CF34A;
+}
+
+.meu-nome h3 {
+  color: #ffffff;
+  font-size: 19px;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  padding: 60px 10%;
+  background-color: #000000;
+
+}
+
+section img{
+  height: 400px;
+  border-radius: 100%;
+  border: 3.5px solid #00FF88;
+  margin-right: 10%;
+  
+}
+
+section div h2 {
+  color: #0CF34A;
+  font-size: 30px;
+}
+
+section div h3{
+  color: #ffffff;
+  font-size: 14px;
+}
+
+section div p{
+  color: #ffffff;
+  font-size: 14.5px;
+  margin-top: 10px;
+  margin-bottom: 5%;
+}
+
+section div button {
+  color:#e3e3e3;
+  background:#04bf23;
+  height: 45px;
+  width: 150px;
+  font-size: 12px;
+  font-weight:bold;
+  text-transform:lowercase;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+section div button:hover {
+  background:#000000;
+  border: 2px solid #0CF34A;
+  transition: 0.5s;
+}
+
+.projetos{
+  background: #201B2C;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ 
+}
+
+.projetos h2{
+  color: #ffffff;
+  font-size: 35px;
+  text-align: center;
+  
+}
+
+.card {
+  background: #000000;
+  height: 350px;
+  width: 230px;
+  border-radius: 20px;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.card img{
+  height: 90px;
+}
+
+.card h5 {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.card p {
+  color: #c4ffe4;
+  font-size: 10.5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: justify
+}
+
+.card a{
+  background-color: #008616;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.card a:hover {
+  background-color: transparent;
+  border: 2px solid #008616;
+}
+
+.card-projetos{
+  display: flex;
+  justify-content:space-around;
+  margin-top: 30px;
+}
+
+footer{
+  background: #000000;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h5{
+  color: #ffffff;
+  font-size: 25px;
+}
+
+footer p{
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 30px;
+
+}
+
+.social{
+  display: flex;
+  gap: 15px;
+}
+
+.social img{
+  height: 30px;
+  border-radius: 50%;
+}
+
+.social a {
+  background: #00FF88;
+  padding: 2px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+
+.social a:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.topo{
+  border-radius:10px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #0CF34A;
+  padding: 0.8%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  box-shadow: 1px 2px 3px #ffffff;
+  cursor: pointer;
+  
+}
+
+
+@media only screen and (max-width: 650px){
+  .tudo, .card-projetos, .meu-nome, #sobre, .link-menu, .meu-nome{
+    width: auto;
+    flex-direction: column;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 450px){
+  .tudo, .card-projetos, .meu-nome, #sobre, .link-menu, .meu-nome{
+    width: auto;
+    flex-direction: column;
+  
+  }
+  .lista {
+    width: 16%;
+    font-size: 20px;
+
+  }
+
+  .codi-img{
+    position:relative;
+    width: 200px;
+    left: 90px;
+    top: 10px;
+    
+
+  }
+
+  .portifolio{
+    font-size: 35px;
+  
+  }
+
+.meu-nome{
+  position: absolute;
+  top: 300px;
+  right: 4px;
+}
+
+  .meu-nome > h1{
+    text-align: center;
+    font-size: 25px;
+  }
+    .meu-nome > h3{
+      text-align: center;
+      font-size: 12px;
+    }
+  
+
+  .gugaimg{
+    height: 200px;
+    margin: 20px;
+  }
+
+  .quemsou{
+    text-align: center;
+  }
+
+  .botao{
+    display:grid;
+    place-items: center;
+    text-decoration: none;
+   }
+
+
+  .card-projetos{
+    padding: 50px;
+    position: relative;
+    
+  }
+  
+  .card{
+    margin: 10px;
+
+  }
+}
+
+
+
